@@ -21,18 +21,18 @@
     <ul id="ideas-list"></ul>
 
     <script>
-    fetch("ideas.json")
-      .then(response => response.json())
-      .then(data => {
-        const list = document.getElementById("ideas-list");
-        data.sort((a, b) => b.votes - a.votes);
-        data.forEach(idea => {
-          const li = document.createElement("li");
-          li.textContent = `${idea.title} - ${idea.votes} votes`;
-          list.appendChild(li);
+        fetch("ideas.json")
+        .then(response => response.json())
+        .then(data => {
+            const list = document.GetElementById("ideas-list");
+            data.sort((a, b) => b.votes - a.votes);
+            data.forEach(idea => {
+                const li = document.createElement("li");
+                li.textContent = `${idea.title} - ${idea.votes} votes`;
+                list.appendChild(li);
+            });
         });
-      });
-  </script>
+    </script>
 </body>
 
 </html>
