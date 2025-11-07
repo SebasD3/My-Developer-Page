@@ -134,6 +134,13 @@ img {
     position:sticky;
     top: 0;
 }
+
+#ideas-ranking-list{
+    display:flex;
+    padding:20px;
+    margin:auto;
+    text-align:auto;
+    
 ul li{
     float: left;
     border-right: 1px solid rgb(0, 0, 0);
