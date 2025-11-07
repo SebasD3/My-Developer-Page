@@ -69,3 +69,7 @@ ul li a:hover {
  ul li a.active {
   background-color: indianred;
 }
+
+#ideas-list{
+  padding:20px;
+}
